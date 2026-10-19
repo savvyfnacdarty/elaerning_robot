@@ -24,22 +24,17 @@
       <file href="audio/VO_02_INTRO_Presentation_produit.mp3"/>
       <file href="audio/VO_03_INTRO_Objectifs.mp3"/>
       <file href="audio/VO_04_INTRO_Programme.mp3"/>
-      <file href="audio/VO_05_CH1_Titre.mp3"/>
       <file href="audio/VO_06_CH1_Deballage_controle.mp3"/>
-      <file href="audio/VO_07_CH1_Protections_transport.mp3"/>
-      <file href="audio/VO_08_CH1_Emplacement_station.mp3"/>
-      <file href="audio/VO_09_CH1_Preparer_logement.mp3"/>
+      <file href="audio/VO_07_CH1_Extrait_video.mp3"/>
       <file href="audio/VO_10_CH1_Consignes_securite.mp3"/>
-      <file href="audio/VO_11_CH1_Raccordements.mp3"/>
       <file href="audio/VO_12_CH1_Premiere_mise_sous_tension.mp3"/>
-      <file href="audio/VO_13_CH1_Voyants.mp3"/>
-      <file href="audio/VO_14_CH1_Parametrage_initial.mp3"/>
+      <file href="audio/VO_12b_CH1_Extrait_mise_sous_tension.mp3"/>
       <file href="audio/VO_15_CH1_Cycle_nettoyage.mp3"/>
       <file href="audio/VO_16_CH1_A_retenir.mp3"/>
       <file href="audio/VO_17_CH2_Titre.mp3"/>
       <file href="audio/VO_18_CH2_Prerequis_reseau.mp3"/>
       <file href="audio/VO_19_CH2_Application.mp3"/>
-      <file href="audio/VO_20_CH2_Appairage.mp3"/>
+      <file href="audio/VO_19b_CH2_Extrait_application.mp3"/>
       <file href="audio/VO_21_CH2_Validation_voyant_wifi.mp3"/>
       <file href="audio/VO_22_CH2_Depannage_wifi.mp3"/>
       <file href="audio/VO_23_CH2_Reinitialiser_wifi.mp3"/>
@@ -82,6 +77,12 @@
       <file href="audio/VO_60_CH5_Quiz_C10.mp3"/>
       <file href="audio/VO_61_CH5_Resultat.mp3"/>
       <file href="audio/VO_62_CONCL_Conclusion_SAV.mp3"/>
+      <file href="video/extrait_application_0159-0552_sans_0256-0425.mp4"/>
+      <file href="video/extrait_deballage_0000-0159.mp4"/>
+      <file href="video/extrait_mise_sous_tension_0256-0425.mp4"/>
+      <file href="video/poster.jpg"/>
+      <file href="video/poster_application.jpg"/>
+      <file href="video/poster_mise_sous_tension.jpg"/>
     </resource>
   </resources>
 </manifest>
