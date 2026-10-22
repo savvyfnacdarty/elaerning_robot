@@ -1,5 +1,5 @@
-<?xml version="2.0" encoding="UTF-8"?>
-<manifest identifier="FD_ACADEMIE_DREAME_X60_V1" version="1.0"
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="FD_ACADEMIE_DREAME_X60_V1" version="2.0"
   xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
   xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -10,7 +10,7 @@
   </metadata>
   <organizations default="ORG1">
     <organization identifier="ORG1">
-      <title>Dreame X60 Pro Ultra Complete – Mise en service, Wi-Fi et entretien</title>
+      <title>Dreame X60 Pro Ultra Complete – Mise en service, Wi-Fi et entretien (FR / PT)</title>
       <item identifier="ITEM1" identifierref="RES1" isvisible="true">
         <title>Dreame X60 Pro Ultra Complete</title>
         <adlcp:masteryscore>80</adlcp:masteryscore>
@@ -77,6 +77,63 @@
       <file href="audio/VO_60_CH5_Quiz_C10.mp3"/>
       <file href="audio/VO_61_CH5_Resultat.mp3"/>
       <file href="audio/VO_62_CONCL_Conclusion_SAV.mp3"/>
+      <file href="audio_pt/VO_01_INTRO_Bienvenue.mp3"/>
+      <file href="audio_pt/VO_02_INTRO_Presentation_produit.mp3"/>
+      <file href="audio_pt/VO_03_INTRO_Objectifs.mp3"/>
+      <file href="audio_pt/VO_04_INTRO_Programme.mp3"/>
+      <file href="audio_pt/VO_06_CH1_Deballage_controle.mp3"/>
+      <file href="audio_pt/VO_07_CH1_Extrait_video.mp3"/>
+      <file href="audio_pt/VO_10_CH1_Consignes_securite.mp3"/>
+      <file href="audio_pt/VO_12_CH1_Premiere_mise_sous_tension.mp3"/>
+      <file href="audio_pt/VO_12b_CH1_Extrait_mise_sous_tension.mp3"/>
+      <file href="audio_pt/VO_15_CH1_Cycle_nettoyage.mp3"/>
+      <file href="audio_pt/VO_16_CH1_A_retenir.mp3"/>
+      <file href="audio_pt/VO_17_CH2_Titre.mp3"/>
+      <file href="audio_pt/VO_18_CH2_Prerequis_reseau.mp3"/>
+      <file href="audio_pt/VO_19_CH2_Application.mp3"/>
+      <file href="audio_pt/VO_19b_CH2_Extrait_application.mp3"/>
+      <file href="audio_pt/VO_21_CH2_Validation_voyant_wifi.mp3"/>
+      <file href="audio_pt/VO_22_CH2_Depannage_wifi.mp3"/>
+      <file href="audio_pt/VO_23_CH2_Reinitialiser_wifi.mp3"/>
+      <file href="audio_pt/VO_24_CH2_A_retenir.mp3"/>
+      <file href="audio_pt/VO_25_CH3_Titre.mp3"/>
+      <file href="audio_pt/VO_26_CH3_Signaux_alerte.mp3"/>
+      <file href="audio_pt/VO_27_CH3_Frequences.mp3"/>
+      <file href="audio_pt/VO_28_CH3_Bac_filtre_brosses.mp3"/>
+      <file href="audio_pt/VO_29_CH3_Eau_serpilleres_chauffage.mp3"/>
+      <file href="audio_pt/VO_30_CH3_Capteurs_contacts_roues.mp3"/>
+      <file href="audio_pt/VO_31_CH3_Erreurs_a_eviter.mp3"/>
+      <file href="audio_pt/VO_32_CH3_Utilisateur_ou_SAV.mp3"/>
+      <file href="audio_pt/VO_33_CH3_A_retenir.mp3"/>
+      <file href="audio_pt/VO_34_CH4_Intro_FAQ.mp3"/>
+      <file href="audio_pt/VO_35_CH4_FAQ_01_02.mp3"/>
+      <file href="audio_pt/VO_36_CH4_FAQ_03_04.mp3"/>
+      <file href="audio_pt/VO_37_CH4_FAQ_05_06.mp3"/>
+      <file href="audio_pt/VO_38_CH4_FAQ_07_08.mp3"/>
+      <file href="audio_pt/VO_39_CH4_FAQ_09_10.mp3"/>
+      <file href="audio_pt/VO_40_CH5_Intro_quiz.mp3"/>
+      <file href="audio_pt/VO_41_CH5_Quiz_Q01.mp3"/>
+      <file href="audio_pt/VO_42_CH5_Quiz_C01.mp3"/>
+      <file href="audio_pt/VO_43_CH5_Quiz_Q02.mp3"/>
+      <file href="audio_pt/VO_44_CH5_Quiz_C02.mp3"/>
+      <file href="audio_pt/VO_45_CH5_Quiz_Q03.mp3"/>
+      <file href="audio_pt/VO_46_CH5_Quiz_C03.mp3"/>
+      <file href="audio_pt/VO_47_CH5_Quiz_Q04.mp3"/>
+      <file href="audio_pt/VO_48_CH5_Quiz_C04.mp3"/>
+      <file href="audio_pt/VO_49_CH5_Quiz_Q05.mp3"/>
+      <file href="audio_pt/VO_50_CH5_Quiz_C05.mp3"/>
+      <file href="audio_pt/VO_51_CH5_Quiz_Q06.mp3"/>
+      <file href="audio_pt/VO_52_CH5_Quiz_C06.mp3"/>
+      <file href="audio_pt/VO_53_CH5_Quiz_Q07.mp3"/>
+      <file href="audio_pt/VO_54_CH5_Quiz_C07.mp3"/>
+      <file href="audio_pt/VO_55_CH5_Quiz_Q08.mp3"/>
+      <file href="audio_pt/VO_56_CH5_Quiz_C08.mp3"/>
+      <file href="audio_pt/VO_57_CH5_Quiz_Q09.mp3"/>
+      <file href="audio_pt/VO_58_CH5_Quiz_C09.mp3"/>
+      <file href="audio_pt/VO_59_CH5_Quiz_Q10.mp3"/>
+      <file href="audio_pt/VO_60_CH5_Quiz_C10.mp3"/>
+      <file href="audio_pt/VO_61_CH5_Resultat.mp3"/>
+      <file href="audio_pt/VO_62_CONCL_Conclusion_SAV.mp3"/>
       <file href="video/extrait_application_0159-0552_sans_0256-0425.mp4"/>
       <file href="video/extrait_deballage_0000-0159.mp4"/>
       <file href="video/extrait_mise_sous_tension_0256-0425.mp4"/>
