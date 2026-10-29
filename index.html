@@ -502,6 +502,9 @@ const card=(t,txt)=>`<div class="box"><h3>${t}</h3><p style="margin:0">${txt}</p
 /* ===== Encadré de visionnage unique (vidéos ET illustrations) =====
    Même cadre 16:9, même position (colonne de gauche), même légende sur tous les écrans illustrés. */
 const media=(k,cap,withSrc)=>`<div class="mwrap"><div class="imgc mframe"><img src="${IMG[k]}" alt="${cap}"></div><div class="mcap">${cap}${withSrc?`<span>${u('srcShort')}</span>`:''}</div></div>`;
+/* Extrait vidéo muet en boucle (illustration animée), sans bouton ni pilotage par la voix off */
+const loopMedia=(src,poster,cap,withSrc)=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ return `<div class="mwrap"><div class="imgc mframe"><video muted loop playsinline preload="auto" ${rm?'':'autoplay'} poster="video/${poster}" aria-label="${cap}"><source src="video/${src}" type="video/mp4"></video></div><div class="mcap">${cap}${withSrc?`<span>${u('srcShort')}</span>`:''}</div></div>`};
 const vid=(poster,src,range)=>`<div class="mwrap"><div class="vidbox mframe" id="vbox"><video id="vid" muted playsinline preload="metadata" poster="video/${poster}"><source src="video/${src}" type="video/mp4"></video><button class="vplay" id="vovl" aria-label="${u('vidAria')}">▶</button><button class="vfs" id="vfs" type="button" aria-label="${u('fsAria')}" title="${u('fsAria')}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="mcap">${u('vidCap',range)}<span>${u('vidHint')}</span></div></div>`;
 /* side = colonne de droite ; mediaHtml = encadré de visionnage (toujours à gauche) ; bottom = zone pleine largeur.
    mf=true : l'encadré est placé avant la colonne de droite dans le code (ordre d'animation de la voix off). */
@@ -611,7 +614,7 @@ const MODS_FR=[
   <div class="callout red"><b>Soyez prudent en retirant les brosses principales :</b> risque de blessure.</div>`},
  {t:`Eau, serpillières et chauffage`,html:()=>`
   <p class="kicker">Chapitre 3 · Circuit d’eau</p><h2>Réservoir, planche à laver et consommables</h2>
-  ${mlayout(`<div class="box"><h3>Réservoir d’eau usagée</h3><ul class="l">${li([`Vider et rincer après chaque utilisation`,`Boule flottante fragile : ne pas forcer`])}</ul></div><div class="box"><h3>Planche à laver</h3><ul class="l">${li([`Rincer le filtre à l’eau propre`,`Module de chauffage chaud : attendre qu’il refroidisse`])}</ul></div><div class="box"><h3>Consommables</h3><ul class="l">${li([`Serpillières : tous les 1 à 3 mois`,`Sac à poussière : tous les 2 à 4 mois`])}</ul></div>`,media('tank_rinse','Réservoir d’eau usagée',true),'',true)}`},
+  ${mlayout(`<div class="box"><h3>Réservoir d’eau usagée</h3><ul class="l">${li([`Vider et rincer après chaque utilisation`,`Boule flottante fragile : ne pas forcer`])}</ul></div><div class="box"><h3>Planche à laver</h3><ul class="l">${li([`Rincer le filtre à l’eau propre`,`Module de chauffage chaud : attendre qu’il refroidisse`])}</ul></div><div class="box"><h3>Consommables</h3><ul class="l">${li([`Serpillières : tous les 1 à 3 mois`,`Sac à poussière : tous les 2 à 4 mois`])}</ul></div>`,loopMedia('boucle_reservoir_eau_usee.mp4','boucle_reservoir_eau_usee.jpg','Réservoir d’eau usagée',true),'',true)}`},
  {t:`Capteurs, contacts et roues`,html:()=>`
   <p class="kicker">Chapitre 3 · Une fois par mois</p><h2>Capteurs, contacts de charge et roues</h2>
   <div class="grid2">
@@ -748,7 +751,7 @@ const MODS_PT=[
   <div class="callout red"><b>Tenha cuidado ao retirar as escovas principais:</b> risco de ferimentos.</div>`},
  {t:`Água, panos de limpeza e aquecimento`,html:()=>`
   <p class="kicker">Capítulo 3 · Circuito de água</p><h2>Depósito, tábua de lavagem e consumíveis</h2>
-  ${mlayout(`<div class="box"><h3>Depósito de água usada</h3><ul class="l">${li([`Esvaziar e enxaguar após cada utilização`,`Bola flutuante frágil: não forçar`])}</ul></div><div class="box"><h3>Tábua de lavagem</h3><ul class="l">${li([`Enxaguar o filtro com água limpa`,`Módulo de aquecimento quente: aguardar que arrefeça`])}</ul></div><div class="box"><h3>Consumíveis</h3><ul class="l">${li([`Panos de limpeza: a cada 1 a 3 meses`,`Saco de pó: a cada 2 a 4 meses`])}</ul></div>`,media('tank_rinse','Depósito de água usada',true),'',true)}`},
+  ${mlayout(`<div class="box"><h3>Depósito de água usada</h3><ul class="l">${li([`Esvaziar e enxaguar após cada utilização`,`Bola flutuante frágil: não forçar`])}</ul></div><div class="box"><h3>Tábua de lavagem</h3><ul class="l">${li([`Enxaguar o filtro com água limpa`,`Módulo de aquecimento quente: aguardar que arrefeça`])}</ul></div><div class="box"><h3>Consumíveis</h3><ul class="l">${li([`Panos de limpeza: a cada 1 a 3 meses`,`Saco de pó: a cada 2 a 4 meses`])}</ul></div>`,loopMedia('boucle_reservoir_eau_usee.mp4','boucle_reservoir_eau_usee.jpg','Depósito de água usada',true),'',true)}`},
  {t:`Sensores, contactos e rodas`,html:()=>`
   <p class="kicker">Capítulo 3 · Uma vez por mês</p><h2>Sensores, contactos de carregamento e rodas</h2>
   <div class="grid2">
